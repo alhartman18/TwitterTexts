@@ -1,0 +1,13 @@
+body {
+	background: #F3EBE9;
+	font-size: 100%;
+	font-family:'Baskerville', serif;
+}
+
+#heading {
+	border: 2px #76590F;
+}
+
+h1, h2, p {
+	color: #76590F;
+}

@@ -1,0 +1,34 @@
+<head>
+<title>
+	<%= @potatoes.full_name%>''s Most Recent Tweets
+</title>
+<link rel="stylesheet" type="text/css" href="/website_style.css">
+</head>
+
+<body>
+<h1> 
+	<%= @potatoes.full_name %>''s Tweets
+</h1>
+
+<h2 id = 'heading'> 
+	<%= @potatoes.full_name %> (<%= @potatoes.twitter_handle %>) tweeted <%= @time %> minutes ago:
+</h2>
+	
+	<br>
+	
+	<p>
+		<%= @potatoes.tweet_text %>
+	</p>
+	
+	<br>
+	
+	<p>
+		<%= @potatoes.hashtags_and_handles %>
+	</p>
+	
+	<br>
+	<% if @potatoes.tweet_image != nil%>
+		<img src =<%= @potatoes.tweet_image %>>
+	<% end %>
+
+</body>
